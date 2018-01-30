@@ -3,8 +3,14 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const CleanWebpackPlugin = require("clean-webpack-plugin")
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
 
+const extractVendorCSS = new ExtractTextPlugin("css/vendor.css");
+const extractAppCSS = new ExtractTextPlugin("css/app.css");
+
 module.exports = {
-    entry: "./src/main.js",
+    entry: {
+        "main": "./src/main.js",
+        "vendor": "./src/vendor.js"
+    },
     output: {
         filename: "[name].bundle.js",
         path: path.resolve(__dirname, "dist")
@@ -15,7 +21,8 @@ module.exports = {
             template: "./src/html/template.html"
         }),
         new CleanWebpackPlugin(["dist"]),
-        new ExtractTextPlugin("app.css")
+        extractVendorCSS,
+        extractAppCSS
     ],
     devServer: {
         contentBase: "./dist"
@@ -24,7 +31,8 @@ module.exports = {
         rules: [
             {
                 test: /\.scss$/,
-                use: ExtractTextPlugin.extract({
+                exclude: /node_modules/, // Pack .scss file from our app only
+                use: extractAppCSS.extract({
                     use: [
                         "css-loader",
                         "sass-loader"
@@ -33,10 +41,12 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: [
-                    "style-loader",
-                    "css-loader"
-                ]
+                include: /node_modules/, // Pack .css file from node_modules (i.e., 3rd-party vendors)
+                use: extractVendorCSS.extract({
+                    use: [
+                        "css-loader"
+                    ]
+                })
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
