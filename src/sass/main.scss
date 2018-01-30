@@ -1,0 +1,9 @@
+$background: #1071aa;
+$foreground: white;
+$font: lighter 24px "Segoe UI", "Open Sans";
+
+html {
+    background-color: $background;
+    color: $foreground;
+    font: $font;
+}
