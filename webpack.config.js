@@ -10,7 +10,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: "Home &bullet; rclim95.com"
+            title: "Home &bullet; rclim95.com",
+            template: "./src/html/template.html"
         }),
         new CleanWebpackPlugin(["dist"])
     ],
