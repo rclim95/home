@@ -4,6 +4,8 @@
   "description": "The home page of rclim95.com",
   "author": "Richard Lim <me@rclim95.com>",
   "license": "UNLICENSED",
+  "repository": "gitlab.com:rclim95/rclim95-home",
+  "homepage": "https://rclim95.com/",
   "private": true,
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.18",
