@@ -4,7 +4,7 @@
         <title><%= htmlWebpackPlugin.options.title %></title>
         <meta charset="utf-8" />
     </head>
-    <body>
+    <body class="bsod">
         <article>
             <section>
                 <header>
@@ -18,19 +18,21 @@
                     <span class="value">0</span>% complete</p>
                 </p>
             </section>
-            <section>
+            <section class="help">
                 <aside>
                     <img id="qr-code"
                          alt="QR Code" />
                 </aside>
-                <p>
-                    For more information about this issue and possible fixes, visit
-                    http://windows.com/stopcode
-                </p>
-                <p>
-                    If you call a support person, give them this info:<br />
-                    Stop Code: HOME_PAGE_UNDER_CONSTRUCTION
-                </p>
+                <div class="text">
+                    <p>
+                        For more information about this issue and possible fixes, visit
+                        http://windows.com/stopcode
+                    </p>
+                    <p>
+                        If you call a support person, give them this info:<br />
+                        Stop Code: HOME_PAGE_UNDER_CONSTRUCTION
+                    </p>
+                </div>
             </section>
         </article>
     </body>
