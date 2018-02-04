@@ -40,6 +40,17 @@ module.exports = {
                 })
             },
             {
+                test: /\.svg$/,
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            outputPath: "./assets/"
+                        }
+                    }
+                ]
+            },
+            {
                 test: /\.css$/,
                 include: /node_modules/, // Pack .css file from node_modules (i.e., 3rd-party vendors)
                 use: extractVendorCSS.extract({
