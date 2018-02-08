@@ -47,6 +47,7 @@ module.exports = {
                     {
                         loader: "file-loader",
                         options: {
+                            publicPath: "/",
                             outputPath: "./assets/"
                         }
                     }
@@ -67,7 +68,8 @@ module.exports = {
                     {
                         loader: "file-loader",
                         options: {
-                            outputPath: "./files/"
+                            publicPath: "/",
+                            outputPath: "./fonts/"
                         }
                     }
                 ]
