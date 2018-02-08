@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const CleanWebpackPlugin = require("clean-webpack-plugin")
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
+const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 
 const extractVendorCSS = new ExtractTextPlugin("css/vendor.css");
 const extractAppCSS = new ExtractTextPlugin("css/app.css");
@@ -21,6 +22,7 @@ module.exports = {
             template: "./src/html/template.html"
         }),
         new CleanWebpackPlugin(["dist"]),
+        new UglifyJSPlugin(),
         extractVendorCSS,
         extractAppCSS
     ],
