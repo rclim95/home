@@ -11,11 +11,21 @@ html {
     min-height: 100%;
 }
 
+html.turn-off {
+    transition: 10s background-color;
+    background-color: black;
+}
+
+html.turn-off body {
+    transition: 10s opacity;
+    opacity: 0;
+}
+
 body {
     align-self: center;
     padding-bottom: 5rem;
     line-height: 1.5rem;
-    width:  50vw;
+    width: 50vw;
 }
 
 .bsod {

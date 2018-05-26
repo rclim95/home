@@ -10,8 +10,9 @@ function getRandomNumber(min, max) {
 }
 
 function incrementProgress() {
-    if (progress === 100) {
-        window.location.href = "https://www.youtube.com/watch?v=bn3jHugG78U&t=405";
+    if (progress === 101) {
+        let html = document.querySelector("html");
+        html.classList.add("turn-off");
         return;
     }
 
