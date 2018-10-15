@@ -1,4 +1,4 @@
-$background: #1071aa;
+$background: #0078d7;
 $foreground: white;
 $font: lighter 24px "Segoe UI", "Open Sans";
 
@@ -11,16 +11,6 @@ html {
     min-height: 100%;
 }
 
-html.turn-off {
-    transition: 10s background-color;
-    background-color: black;
-}
-
-html.turn-off body {
-    transition: 10s opacity;
-    opacity: 0;
-}
-
 body {
     align-self: center;
     padding-bottom: 5rem;
@@ -28,28 +18,9 @@ body {
     width: 50vw;
 }
 
-.bsod {
-    .emoji {
-        font-size: 6rem;
-        font-weight: normal;
-        line-height: normal;
-        margin: 0 0 0.67rem 0;
-    }
-
-    .help {
-        font-size: 0.9rem;
-        display: flex;
-
-        .text {
-            margin-left: 0.5rem;
-            
-            :first-child {
-                margin-top: 0;
-            }
-
-            :last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
+h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0 0 0.67rem 0;
 }
