@@ -5,6 +5,7 @@
   "main": "dist/app.js",
   "scripts": {
     "start": "node dist/server/app.js",
+    "publish": "tsc & webpack --mode=production",
     "watch-client": "webpack --mode=development --watch",
     "watch-server": "tsc-watch --onSuccess \"node ./dist/server/app.js\""
   },
