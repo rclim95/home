@@ -1,0 +1,126 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: #006FAA;
+    color: #E8F7FF;
+    font-family: "Lato", serif;
+    font-stretch: semi-expanded;
+    line-height: 1.5rem;
+    height: 100vh;
+}
+
+h1 {
+    line-height: 2.25rem;
+}
+
+a {
+    color: #90E0EF;
+    text-decoration: none;
+    transition: all 250ms;
+}
+
+a:hover {
+    color: #EDFAFD;
+    text-decoration: underline;
+}
+
+.container {
+    width: 1140px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+header {
+    background-color: #0086CF;
+    display: flex;
+    justify-content: center;
+}
+
+    header .profile {
+        clip-path: circle(50.0% at 50% 50%);
+        width: 100px;
+    }
+
+    header .profile-wrap {
+        filter: drop-shadow(0px 0.5rem 1rem rgba(0, 0, 0, 0.3));
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    header h1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        flex-grow: 1;
+    }
+
+    header .container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-right: 0;
+    }
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main .bio {
+    margin-left: 1rem;
+    flex-grow: 1;
+}
+
+ul.inline-links {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+    ul.inline-links li {
+        flex-grow: 1;
+    }
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mt-1 {
+    margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .hidden-lg {
+        display: none;
+    }
+
+    header {
+        height: 25vh;
+    }
+
+        header .profile {
+            width: 200px;
+        }
+
+        header .profile-wrap {
+            margin-left: 0rem;
+            position: relative;
+            top: 100px;
+        }
+
+        header .container {
+            align-items: flex-end;
+            flex-direction: row;
+        }
+
+    main {
+        height: 75vh;
+    }
+
+        main .container {
+            padding-left: calc(200px + 1.5rem);
+            width: calc(1140px - (200px + 1.5rem));
+        }
+}

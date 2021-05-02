@@ -1,15 +1,9 @@
-import config from "../config.json"
+import config from "../config.json";
 import http from "http";
+import { Game } from "../types";
 
+const BASE_URL_STORE = "https://store.steampowered.com/app/";
 const BASE_URL_RECENTLY_PLAYED_GAMES = "http://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?format=json";
-
-/**
- * Represents a game on Steam
- */
-export type Game = {
-    name: string;
-    iconUrl: string;
-};
 
 /**
  * Gets the recently played game for a user (defined in `config.json`) on Steam.
@@ -25,6 +19,7 @@ export function getRecentlyPlayedGame(): Promise<Game | null> {
                 if (recentGame !== undefined) {
                     return resolve({
                         name: recentGame["name"],
+                        storeUrl: `${BASE_URL_STORE}${recentGame["appid"]}`,
                         iconUrl: `http://media.steampowered.com/steamcommunity/public/images/apps/${recentGame["appid"]}/${recentGame["img_icon_url"]}.jpg`
                     });
                 }

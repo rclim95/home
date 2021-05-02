@@ -1,8 +1,5 @@
-import https from "https";
 import path from "path";
-
 import express from "express";
-
 import * as steam from "./steam";
 
 const app = express();
