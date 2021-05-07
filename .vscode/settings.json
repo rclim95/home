@@ -1,9 +1,12 @@
 {
     "files.exclude": {
         "**/.git": true,
+<<<<<<< HEAD
         "**/.svn": true,
         "**/.hg": true,
         "**/CVS": true,
+=======
+>>>>>>> wip/webpack-5
         "**/.DS_Store": true,
         "**/node_modules": true
     }

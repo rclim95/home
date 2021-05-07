@@ -1,5 +1,6 @@
 {
   "name": "rclim95-home",
+<<<<<<< HEAD
   "version": "0.1.0",
   "description": "The home page of rclim95.com",
   "author": "Richard Lim <me@rclim95.com>",
@@ -26,5 +27,54 @@
     "build": "webpack",
     "build-prod": "webpack --env.PRODUCTION",
     "start": "webpack-dev-server --open"
+=======
+  "version": "1.1.0",
+  "description": "The homepage that powers rclim95.com",
+  "main": "dist/server/app.js",
+  "scripts": {
+    "start": "node dist/server/app.js",
+    "watch": "npm run watch:server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production --env PRODUCTION",
+    "build:dev": "webpack --mode=development",
+    "watch:build": "webpack --mode=development --watch",
+    "watch:server": "nodemon ./dist/server/app.js --watch dist/client --watch dist/server"
+  },
+  "private": "true",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rclim95/rclim95-home.git"
+  },
+  "author": "Richard Lim <rclim95@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rclim95/rclim95-home/issues"
+  },
+  "homepage": "https://github.com/rclim95/rclim95-home#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/lodash": "^4.14.168",
+    "autoprefixer": "^10.2.5",
+    "css-loader": "^5.2.4",
+    "html-loader": "^2.1.2",
+    "mini-css-extract-plugin": "^1.6.0",
+    "mini-html-webpack-plugin": "^3.1.3",
+    "nodemon": "^2.0.7",
+    "postcss-loader": "^5.2.0",
+    "sass": "^1.32.12",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^9.1.1",
+    "typescript": "^4.2.4",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^5.0.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21"
+>>>>>>> wip/webpack-5
   }
 }
