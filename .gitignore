@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-# Created by https://www.gitignore.io/api/node,windows,visualstudiocode
-=======
 # Created by https://www.toptal.com/developers/gitignore/api/node,vscode
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,vscode
->>>>>>> wip/webpack-5
 
 ### Node ###
 # Logs
@@ -12,13 +8,10 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-<<<<<<< HEAD
-=======
 lerna-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
->>>>>>> wip/webpack-5
 
 # Runtime data
 pids
@@ -31,19 +24,12 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
-<<<<<<< HEAD
-=======
 *.lcov
->>>>>>> wip/webpack-5
 
 # nyc test coverage
 .nyc_output
 
-<<<<<<< HEAD
-# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-=======
 # Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
->>>>>>> wip/webpack-5
 .grunt
 
 # Bower dependency directory (https://bower.io/)
@@ -52,37 +38,25 @@ bower_components
 # node-waf configuration
 .lock-wscript
 
-<<<<<<< HEAD
-# Compiled binary addons (http://nodejs.org/api/addons.html)
-=======
 # Compiled binary addons (https://nodejs.org/api/addons.html)
->>>>>>> wip/webpack-5
 build/Release
 
 # Dependency directories
 node_modules/
 jspm_packages/
 
-<<<<<<< HEAD
-# Typescript v1 declaration files
-typings/
-
-=======
 # TypeScript v1 declaration files
 typings/
 
 # TypeScript cache
 *.tsbuildinfo
 
->>>>>>> wip/webpack-5
 # Optional npm cache directory
 .npm
 
 # Optional eslint cache
 .eslintcache
 
-<<<<<<< HEAD
-=======
 # Optional stylelint cache
 .stylelintcache
 
@@ -92,7 +66,6 @@ typings/
 .rts2_cache_es/
 .rts2_cache_umd/
 
->>>>>>> wip/webpack-5
 # Optional REPL history
 .node_repl_history
 
@@ -104,44 +77,6 @@ typings/
 
 # dotenv environment variables file
 .env
-<<<<<<< HEAD
-
-
-### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history
-
-### Windows ###
-# Windows thumbnail cache files
-Thumbs.db
-ehthumbs.db
-ehthumbs_vista.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-
-# End of https://www.gitignore.io/api/node,windows,visualstudiocode\
-
-# Project Specific
-dist
-=======
 .env.test
 .env*.local
 
@@ -201,4 +136,3 @@ temp/
 *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/node,vscode
->>>>>>> wip/webpack-5
