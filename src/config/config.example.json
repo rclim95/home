@@ -1,0 +1,16 @@
+{
+    "steam": {
+        "defaults": {
+            "name": "Spelunky 2",
+            "storeUrl": "https://store.steampowered.com/app/418530/Spelunky_2/"
+        },
+        "key": "",
+        "userid": ""
+    },
+    "spotify": {
+        "defaults": {
+            "artist": "Bastille",
+            "url": "https://open.spotify.com/artist/7EQ0qTo7fWT7DPxmxtSYEc"
+        }
+    }
+}

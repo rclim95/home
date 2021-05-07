@@ -1,0 +1,11 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "alwaysStrict": true,
+        "noImplicitAny": true,
+        "inlineSourceMap": true,
+        "module": "es6",
+        "target": "ES6"
+    }
+}

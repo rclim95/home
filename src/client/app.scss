@@ -1,0 +1,17 @@
+@import "_custom";
+@import "~bootstrap/scss/bootstrap";
+
+.img-avatar {
+    background-color: $avatar-bg-color;
+    border: 1px solid darken($avatar-bg-color, 10%);
+}
+
+@include media-breakpoint-up(md) {
+    header {
+        height: 25vh;
+    }
+
+    .img-avatar {
+        transform: translateY(50%);
+    }
+}
