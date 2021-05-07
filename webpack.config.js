@@ -65,6 +65,7 @@ module.exports = env => {
                     context: {
                         title: "Home &bullet; rclim95's Home",
                         head: `
+    <meta name="description" content="The homepage of Richard Lim, a software developer that loves working with C# (among other things)." />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />`
